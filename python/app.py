@@ -54,4 +54,11 @@ def route_metrics(): return jsonify(metrics())
 def too_large(_): return jsonify({"error":"Request too large; limit is 5 MB"}),413
 @app.errorhandler(500)
 def server_error(_): return jsonify({"error":"NLP processing failed; check service setup and model resources"}),500
-if __name__=='__main__': app.run(host='127.0.0.1',port=5001,debug=False)
+import os
+
+if __name__ == '__main__':
+    app.run(
+        host='0.0.0.0',
+        port=int(os.environ.get('PORT', 5001)),
+        debug=False
+    )
