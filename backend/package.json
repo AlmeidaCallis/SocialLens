@@ -1,0 +1,21 @@
+{
+  "name": "sociallens-server",
+  "version": "1.1.0",
+  "type": "module",
+  "scripts": {
+    "start": "node src.js",
+    "dev": "node --watch src.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "axios": "^1.10.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^5.1.0",
+    "multer": "^2.0.1",
+    "pg": "^8.16.3",
+    "pdf-parse": "^1.1.1",
+    "mammoth": "^1.9.0",
+    "xlsx": "^0.18.5"
+  }
+}

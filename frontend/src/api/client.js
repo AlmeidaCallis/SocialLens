@@ -1,0 +1,1 @@
+import axios from 'axios';export const api=axios.create({baseURL:import.meta.env.VITE_API_URL||'http://localhost:5000/api',timeout:60000});api.interceptors.response.use(r=>r,e=>{const message=e.response?.data?.error||e.message||'Request failed';return Promise.reject(new Error(message))});
