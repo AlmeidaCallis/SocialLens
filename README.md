@@ -2,6 +2,11 @@
 
 SocialLens is a local full-stack learning project for analyzing supplied social-media comments. It does **not** scrape or log in to Instagram, Facebook, X/Twitter, TikTok or Snapchat. Choose a platform label and paste comments or upload a supported file.
 
+## Project Demo Video
+
+Watch the working demonstration of SocialLens:
+https://drive.google.com/file/d/1pxHwabrR5_kDkI7OLoB2KQG1GMpJeM03/view?usp=sharing
+
 ## Folder layout
 
 - `frontend/` — React + Vite interface, retro teal glassmorphism theme, dashboard, analysis, comment manager, NLP lab and reports.
